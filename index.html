@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/03c18f534b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>PortFolio</title>
   </head>
   <body>
     <header>
       <div class="navbar_conatiner">
         <div class="logo_conatiner">
-          <img src="logo.png" alt="logo_image" />
+          <a href="#" class="logo"><span>Raj</span>eev</a>
         </div>
         <nav class="navbar">
-          <a href="#">Portfolio</a>
-          <a href="#">Services</a>
-          <a href="#">Experience</a>
-          <a href="#">Projects</a>
-          <a href="#">Eduction</a>
+          <a href="#port">Portfolio</a>
+          <a href="#aboutme">About Me</a>
+          <a href="#project">Projects</a>
+          <a href="#contactme">Contact Me</a>
+          <a href="#">Education</a>
         </nav>
         <div class="contact_me">
           <button>Contact Me</button>
@@ -26,12 +30,10 @@
     </header>
     <main>
       <div class="main_conatiner">
-        <div class="portfolio">
+        <div id="port" class="portfolio">
           <div class="content">
-            <p style="font-size: large; font-weight: 600">Hii</p>
-            <h2>I'm</h2>
-            <h2 style="color: orange">Rajeev Verma</h2>
-            <h2>a Node.Js Developer</h2>
+            <h3>Hii</h3>
+            <h1>I'm <span style="color: orangered;">Rajeev Verma<br></span>a Node.Js Developer</h1>
             <div class="para">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
@@ -46,13 +48,13 @@
             <img src="photo.png" alt="image" />
           </div>
         </div>
-        <div class="about_me">
+        <div id="aboutme" class="about_me">
           <div class="image_about">
             <img src="photo.png" alt="photo" />
           </div>
           <div class="about_content">
-            <h2>About Me</h2>
-            <h1>Backend Developer</h1>
+            <h2>About <span style="color: orangered;">Me</span></h2>
+            <h3>Backend <span style="color: orangered;"> Developer</span></h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
               saepe impedit alias dolorum mollitia quos dolore, dolor
@@ -63,7 +65,57 @@
             </div>
           </div>
         </div>
-        <div class="form_conatiner">
+
+        <div id="project">
+          <h1>Projects</h1>
+          <div class="cover">
+          <div class="ecommerce">
+           <img src="ecommerce1.png" alt="e-commerce">
+           <h3>E-Commerce</h3>
+           <p>The e-commerce website enabled product management, user authentication, shopping cart, order processing, product search and filtering.</p>
+           <h4>Tech Used: <span>HTML</span><span>CSS</span><span>JavaScript</span> <span>Node.Js</span><span>MongoDB</span></h4>
+          </div>
+          <div class="cardeal">
+            <img src="car deal.jpg" alt="e-commerce">
+           <h3>Car Dealership</h3>
+           <p>The car dealership website lets users browse and inquire about cars securely. Admins manage listings and users. The site is responsive and safe.   </p>
+           <h4>Tech Used: <span>Node.js</span><span>Express</span><span>MongoDB</span> <span>JWT</span><span>Bcryptjs</span></h4>
+          
+          </div>
+          <div class="learn">
+            <img src="e-learning-website.png" alt="e-commerce">
+            <h3>E-Learning Platform</h3>
+            <p>User management, course CRUD, enrollment. Integrated neon.tech for storage, resend.com for emails. Implemented JWT security, error handling.</p>
+            <h4>Tech Used: <span>Node.js</span><span>Express</span><span>Neon.tech</span> <span>JWT</span><span>Bcryptjs</span><span>Resend.com</span></h4> 
+          </div>
+          <div class="form">
+            <img src="Bank.jpg" alt="e-commerce">
+            <h3>Bank API</h3>
+            <p>The code handles user creation and retrieval. It validates input data, updates existing users or creates new ones, fetches external data, generates JWT tokens, and retrieves user data based on the provided ID.</p>
+            <h4>Tech Used: <span>Node.js</span><span>Express</span><span>MongoDB</span> <span>JWT</span><span>Axios</span><span>Ifsc</span></h4> 
+          
+          </div>
+        </div>
+        </div>
+
+        
+        <div id="education">
+          <h1>Education</h1>
+          <div class="mca">
+           <div><img src="rd-engineering-college.jpg" alt="MCA College"></div> 
+           <div> <h2><span>Master's of computer application</span><br>
+            R.D.Engineering College <br> (Duhai, Gaziabad, Uttar Pardesh) <br> Duration: 2019 - 2022</p>
+            <P></P></div>
+          </div>
+          <div class="bca">
+            <div><img src="rd-engineering-college.jpg" alt="MCA College"></div> 
+            <div> <h2><span>Master's of computer application</span><br>
+             R.D.Engineering College <br> (Duhai, Gaziabad, Uttar Pardesh) <br> Duration: 2019 - 2022</p>
+             <P></P></div>
+          </div>
+        </div>
+
+        <div id= "contactme"class="form_conatiner">
           <div class="contact_me">
             <h1>Contact Me</h1>
             <form action="">
@@ -77,12 +129,17 @@
             </form>
           </div>
         </div>
+
+
       </div>
     </main>
     <footer>
       <div class="footer_container">
         <div class="icon_container">
-
+         <a href="#"> <i class="fa-brands fa-instagram fa-xl" style="color: #f6f7f8;"></i></a>
+         <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #f9fafb;"></i></a>
+         <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #f1f2f3;"></i></a>
+         <a href="https://www.linkedin.com/in/rajeev-verma-915223193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin fa-lg" style="color: #f9fafa;"></i></a>
         </div>
         <div class="footer_list">
           <a href="#">FAQ</a>
@@ -94,4 +151,5 @@
       </div>
     </footer>
   </body>
+  
 </html>
