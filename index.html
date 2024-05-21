@@ -1,178 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/03c18f534b.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <title>PortFolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03c18f534b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+ 
 </head>
-
 <body>
-  <header>
-    <div class="navbar_conatiner">
-      <div class="logo_conatiner">
-        <a href="#" class="logo"><span>Raj</span>eev</a>
-      </div>
-      <nav class="navbar">
-        <a href="#port">Portfolio</a>
-        <a href="#aboutme">About Me</a>
-        <a href="#project">Projects</a>
-        <a href="#contactme">Contact Me</a>
-        <a href="#education">Education</a>
-      </nav>
-      <div class="contact_me">
-        <button>Contact Me</button>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="main_conatiner">
-      <div id="port" class="portfolio">
-        <div class="content">
-          <h3>Hii</h3>
-          <h1>I'm <span style="color: orangered;">Rajeev Verma<br></span>a Node.Js Developer</h1>
-          <div class="para">
-            <p>
-              Currently pursuing my Masters in
-              Computer Applications (MCA) with focus on node.js development , I am eager to begin my career as a node.js
-              developer. I am particularly interested in utilizing my skills in serverless technology, the express
-              framework, and html create efficient, scalable web applications.
-
-              Throughout my academic journey , I have gained valuable experience in Node. js, javascript, MongoDB, and
-              AWS services. I have also actively participated in hackathons and personal projects, where I have
-              successfully applied my knowledge to create innovative solutions.
-
-            </p>
-          </div>
-          <div class="hire_button"><button>Hire Me</button></div>
+    <!-- navbar goes here -->
+    <header>
+    <nav class="w-full h-[70px] bg-black text-white flex justify-between px-4 items-center md:px-6">
+        <div class="text-2xl font-bold hover:text-orange-600 hover:scale-125 transition duration-50 cursor-pointer">
+          Rajeev
         </div>
-        <div class="image">
-          <img src="photo.png" alt="image" />
+
+        <div class="md:flex hidden font-bold items-center text-lg">
+           <a href="#aboutMe" class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">About Me </a>
+           <a href="#project" class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Projects </a>
+           <a href="#education" class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Education </a>
+           </div>
+        <div class="border-style:solid bg-orange-600 p-2 rounded-xl hover:bg-orange-700">
+         <a href="../resume/Rajeev Verma node3.pdf" download="Rajeev Resume"><button >Resume Download</button></a>
         </div>
-      </div>
-      <div id="aboutme" class="about_me">
-        <div class="image_about">
-          <img src="photo.png" alt="photo" />
+    </nav>
+</header>
+
+    <!-- navbar ends here -->
+   
+    <main>
+        <!-- aboutUs goes here -->
+        <div id="aboutMe" class="w-full h-auto flex flex-col-reverse items-center p-6  px-2 tracking-wider md:flex-row md:p-20 ">
+            <div class="m-10">
+                <h3 class="text-2xl font-bold md:text-4xl">Hiii</h3>
+                <h1 class="font-bold md:text-6xl">I'm <span class="font-bold text-orange-500 text-xl md:text-6xl">Rajeev Verma<br></span>a Node.Js Developer</h1>
+                <p class="md:py-4">Currently pursuing my Masters in
+                    Computer Applications (MCA) with focus on node.js development , I am eager to begin my career as a node.js
+                    developer. I am particularly interested in utilizing my skills in serverless technology, the express
+                    framework, and html create efficient, scalable web applications.
+      
+                    Throughout my academic journey , I have gained valuable experience in Node. js, javascript, MongoDB, and
+                    AWS services. I have also actively participated in hackathons and personal projects, where I have
+                    successfully applied my knowledge to create innovative solutions.
+      </p>
+      
+            </div>
+
+            <div class="w-64  md:w-[2050px] md:pr-32 pr-10">
+            
+             <img class="rounded-3xl" src="../resume/phot.jpg" alt="">
+            
         </div>
-        <div class="about_content">
-          <h2>About <span style="color: orangered;">Me</span></h2>
-          <h3>Backend <span style="color: orangered;"> Developer</span></h3>
-          <p>
-            I am currently in the 4 th semester of my MCA program, and I am confident that my skills, combined with my
-            passion for continuous learning and problem-solving, make me strong Candidate for Node.js position.
-          </p>
-          <div class="about_button">
-            <button>Experience</button>
-          </div>
         </div>
-      </div>
 
-      <div id="project">
-        <h1>Projects</h1>
-        <div class="cover">
-          <div class="ecommerce">
-            <img src="ecommerce1.png" alt="e-commerce">
-            <h3>E-Commerce</h3>
-            <p>The e-commerce website enabled product management, user authentication, shopping cart, order processing,
-              product search and filtering.</p>
-            <h4>Tech Used: <span>HTML</span><span>CSS</span><span>JavaScript</span>
-              <span>Node.Js</span><span>MongoDB</span></h4>
-          </div>
-          <div class="cardeal">
-            <img src="car deal.jpg" alt="e-commerce">
-            <h3>Car Dealership</h3>
-            <p>The car dealership website lets users browse and inquire about cars securely. Admins manage listings and
-              users. The site is responsive and safe. </p>
-            <h4>Tech Used: <span>Node.js</span><span>Express</span><span>MongoDB</span>
-              <span>JWT</span><span>Bcryptjs</span></h4>
+        <!-- aboutus end here -->
 
-          </div>
-          <div class="learn">
-            <img src="e-learning-website.png" alt="e-commerce">
-            <h3>E-Learning Platform</h3>
-            <p>User management, course CRUD, enrollment. Integrated neon.tech for storage, resend.com for emails.
-              Implemented JWT security, error handling.</p>
-            <h4>Tech Used: <span>Node.js</span><span>Express</span><span>Neon.tech</span>
-              <span>JWT</span><span>Bcryptjs</span><span>Resend.com</span></h4>
-          </div>
-          <div class="form">
-            <img src="Bank.jpg" alt="e-commerce">
-            <h3>Bank API</h3>
-            <p>The code handles user creation and retrieval. It validates input data, updates existing users or creates
-              new ones, fetches external data, generates JWT tokens, and retrieves user data based on the provided ID.
-            </p>
-            <h4>Tech Used: <span>Node.js</span><span>Express</span><span>MongoDB</span>
-              <span>JWT</span><span>Axios</span><span>Ifsc</span></h4>
+        <!-- project goes here -->
+        <div id="project" class="text-white bg-black w-full py-5">
+            <h1 class="text-center text-5xl font-bold text-orange-500">Projects</h1>
+          
+            <div class="md:flex md:justify-evenly md:flex-wrap m-5">
+          
+                <div class="md:w-80 m-5">
+                <div class="m-1 bg-white text-black p-2 rounded-lg hover:bg-slate-100 hover:shadow-lg hover:shadow-orange-600 hover:scale-105">
+                    <div class="md:w-50 md:m-2 ">
+                    <img class="rounded-xl" src="../resume/ecommerce1.png" alt="">
+                    </div>
+                    <h3 class="text-center text-xl font-semibold">E-Commerce</h3>
+                    <p class="">The e-commerce website enabled product management, user authentication, shopping cart, order processing,
+                        product search and filtering.</p>
+                    <h4 class="font-semibold">Tech Used: <span class="ring-1 ring-black px-1 rounded-md ">HTML</span><span class="ring-1 ring-black px-1 rounded-md mx-1">CSS</span><span class="ring-1 ring-black px-1 rounded-md mx-1">JavaScript</span>
+                        <span class="ring-1 ring-black px-1 rounded-md m-2">Node.Js</span><span class="ring-1 ring-black px-1 rounded-md my-2">MongoDB</span></h4>
+                </div>
+            </div>
 
-          </div>
+            <div class="md:w-80 m-5">
+                <div class="m-1 bg-white text-black p-2 rounded-lg hover:bg-slate-100 hover:shadow-lg hover:shadow-orange-600 hover:scale-105">
+                    <div class="md:w-50 md:m-2">
+                    <img class="rounded-xl md:h-[240px]" src="../resume/car deal.jpg" alt="">
+                    </div>
+                    <h3 class="text-center text-xl font-semibold">Car Dealership</h3>
+                    <p class="">The car dealership website lets users browse and inquire about cars securely. Admins manage listings and
+                        users. The site is responsive and safe.</p>
+                    <h4 class="font-semibold "><span class="md:whitespace-nowrap">Tech Used: </span><span class="ring-1 ring-black px-1 rounded-md ">Node.js</span><span class="ring-1 ring-black px-1 rounded-md mx-1">Express</span><span class="ring-1 ring-black px-1 rounded-md mx-1">MongoDB</span>
+                        <span class="ring-1 ring-black px-1 rounded-md m-2">JWT</span><span class="ring-1 ring-black px-1 rounded-md my-2">Bcryptjs</span></h4>
+                </div>
+            </div>
+
+            <div class=" md:w-80 m-5">
+                <div class="m-1 bg-white text-black p-2 rounded-lg hover:bg-slate-100 hover:shadow-lg hover:shadow-orange-600 hover:scale-105">
+                    <div class="md:w-50 md:m-2 ">
+                    <img class="rounded-xl md:h-[220px]" src="../resume/e-learning-website.png" alt="">
+                    </div>
+                    <h3 class="text-center text-xl font-semibold">E-Learning Platform</h3>
+                    <p class="">User management, course CRUD, enrollment. Integrated neon.tech for storage, resend.com for emails.
+                        Implemented JWT security, error handling.</p>
+                    <h4 class="font-semibold"> <span class="md:whitespace-nowrap">Tech Used: </span><span class="ring-1 ring-black px-1 rounded-md ">Node.js</span><span class="ring-1 ring-black px-1 rounded-md mx-1">Express</span><span class="ring-1 ring-black px-1 rounded-md mx-1">Neon.tech</span>
+                        <span class="ring-1 ring-black px-1 rounded-md m-2">JWT</span><span class="ring-1 ring-black px-1 rounded-md my-2">Bcryptjs</span>
+                        <span class="ring-1 ring-black px-1 rounded-md my-2">Resend.com</span></h4>
+                </div>
+            </div>
+          
+            <div class="md:w-80 md:m-7 m-5">
+                <div class="m-1 bg-white text-black p-2 rounded-lg hover:bg-slate-100 hover:shadow-lg hover:shadow-orange-600 hover:scale-105">
+                    <div class="md:w-50 md:m-2 ">
+                    <img class="rounded-xl md:h-40" src="../resume/Bank.jpg" alt="">
+                    </div>
+                    <h3 class="text-center text-xl font-semibold">Bank API</h3>
+                    <p class="">The code handles user creation and retrieval. It validates input data, updates existing users or creates
+                        new ones, fetches external data, generates JWT tokens, and retrieves user data based on the provided ID.
+                      </p>
+                    <h4 class="font-semibold"> <span class="md:whitespace-nowrap">Tech Used: </span><span class="ring-1 ring-black px-1 rounded-md ">Node.js</span><span class="ring-1 ring-black px-1 rounded-md mx-1">Express</span><span class="ring-1 ring-black px-1 rounded-md mx-1">MongoDB</span>
+                        <span class="ring-1 ring-black px-1 rounded-md m-2">JWT</span>
+                        <span class="ring-1 ring-black px-1 rounded-md my-2">Ifsc</span></h4>
+                </div>
+            </div>
+          
+
         </div>
-      </div>
 
-
-      <div id="education">
-        <h1>Education</h1>
-        <div class="mca">
-          <div><img src="rd-engineering-college.jpg" alt="MCA College"></div>
-          <div>
-            <h2><span>Master's of computer application</span><br>
-              R.D.Engineering College <br> Duhai, Gaziabad, Uttar Pardesh <br> Duration: 2022 - 2024</p>
-              <P></P>
-          </div>
         </div>
-        <div class="bca">
-          <div><img src="I.T.S School of Management.jpg" alt="MCA College"></div>
-          <div>
-            <h2><span>Bachelor's of computer application</span><br>
-              INSTITUTE OF TECHNOLOGY & SCIENCES <br> MOHAN NAGAR, GHAZIABAD, Uttar Pardesh <br> Duration: 2019 - 2022
-              </p>
-              <P></P>
-          </div>
+
+        <!-- projects end here -->
+
+
+        <!-- Eduction Section goes here -->
+
+        <div id="education" class="w-full text-black my-5">
+            <h1 class="text-center text-5xl font-bold text-orange-500">Education</h1>
+
+            <div class=" w-72 border-solid border-black m-5 flex flex-col md:justify-evenly md:flex-row md:mx-20 ring-2 ring-black p-3 rounded-2xl md:w-[1100px]">
+                <div >
+                <img  class=" md:h-60 md:w-96 ring-1 ring-black rounded-lg" src="../resume/rd-engineering-college.jpg" alt="">
+                </div>
+                <div class="text-center md:my-10">
+                    <h2 class="md:text-2xl font-semibold"><span class="font-bold">Master's of computer application</span><br>
+                      R.D.Engineering College <br> Duhai, Ghaziabad, Uttar Pardesh <br> Duration: 2022 - 2024</p>
+                      
+                  </div>
+            </div>
+       
+            <div class="w-72 border-solid border-black m-5 flex flex-col md:justify-evenly md:flex-row md:mx-20 ring-2 ring-black p-3 rounded-2xl md:w-[1100px]">
+                <div >
+                <img  class=" md:h-60 md:w-96 ring-1 ring-black rounded-lg" src="../resume/I.T.S School of Management.jpg" alt="">
+                </div>
+                <div class="text-center md:my-10">
+                    <h2 class="md:text-2xl font-semibold"><span class="font-bold">Bachelor's of computer application</span><br>
+                        Institute Of Technology & Sciences <br> Mohan Nagar, Ghaziabad, Uttar Pardesh  <br> Duration: 2019 - 2022</p>
+                      
+                  </div>
+            </div>
+       
+       
         </div>
-      </div>
 
-      <div id="contactme" class="form_conatiner">
-        <div class="contact_me">
-          <h1>Contact <span style="color: orangered;">Me </span></h1>
-          <form action="">
-            <input type="text" class="input_form" placeholder="Full Name"><br>
-            <input type="text" class="input_form" placeholder="Email"><br>
-            <input type="text" class="input_form" placeholder="Phone Number"><br>
-            <input type="text" class="input_form" placeholder="Subject"><br>
-            <input type="message" class="messageInput" placeholder="Type your message here..."><br>
-            <input type="button" class="form_button" value="Send Message">
+        <!-- Education section end here -->
 
-          </form>
+
+    </main>
+
+    <footer>
+        <div class="bg-black py-5">
+            <div class="text-center">
+                <a href="https://www.instagram.com/rajiv__verma_?utm_source=qr&igsh=MWNpaWE1dWptNjN4eg=="> <i class="fa-brands fa-instagram fa-2xl mx-2 hover:scale-125" style="color: white;"></i></a>
+                <a href="https://github.com/Rajeevverma20"> <i class="fa-brands fa-github fa-2xl mx-2 hover:scale-125" style="color: white;"></i></a>
+                <a href="https://x.com/RajeevVerm43660?t=7xRboVZDCwEov-_if3vybA&s=08 "><i class="fa-brands fa-twitter fa-xl mx-2 hover:scale-125" style="color: white;"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/rajeev-verma-915223193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class="fa-brands fa-linkedin fa-xl mx-2 hover:scale-125" style="color: white;"></i></a>
+             
+            </div>
+            <div class="flex flex-col text-center md:flex-row md:justify-center m-2 text-lg font-semibold text-white">
+               <a href="#project"> <h3 class="m-2 hover:scale-110">Project</h3> </a>
+                <a href="#education"> <h3 class="m-2 hover:scale-110">Education</h3> </a>
+                <a href="#aboutMe"><h3 class="m-2 hover:scale-110">About me</h3> </a>
+            </div>
         </div>
-      </div>
-
-
-    </div>
-  </main>
-  <footer>
-    <div class="footer_container">
-      <div class="icon_container">
-        <a href="#"> <i class="fa-brands fa-instagram fa-xl" style="color: #f6f7f8;"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #f9fafb;"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #f1f2f3;"></i></a>
-        <a
-          href="https://www.linkedin.com/in/rajeev-verma-915223193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-            class="fa-brands fa-linkedin fa-lg" style="color: #f9fafa;"></i></a>
-      </div>
-      <div class="footer_list">
-        <a href="#project">Project</a>
-        <a href="#aboutme">About Me</a>
-        <a href="#contactme">Contact Me</a>
-        <a href="#education">Education</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
-
 </html>
